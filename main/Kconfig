@@ -1,0 +1,35 @@
+menu "__Time"
+
+	menu "WiFi Setup"
+		config WIFI_SSID
+			string "WiFi SSID"
+			default "n"
+			help
+				SSID of the WiFi to join
+
+		config WIFI_PWD
+			string "WiFi Password"
+			default "n"
+			help
+				Password of the WiFi to join
+	endmenu
+
+	menu "I2C Setup"
+		config SCL
+			int "SCL"
+			default 22
+		config SDA
+			int "SDA"
+			default 21
+		config CLK_SPEED
+			int "CLK_SPEED"
+			default 100000
+	endmenu
+
+	menu "IR"
+		config RMT_RX_GPIO
+			int "RMT_RX_GPIO"
+			default 19
+	endmenu
+
+endmenu
