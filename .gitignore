@@ -1,0 +1,9 @@
+# Enviornment
+.vscode/
+.DS_Store
+
+# Build Output and files
+build/
+trace/
+sdkconfig
+sdkconfig.old
